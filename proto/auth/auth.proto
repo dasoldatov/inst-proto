@@ -17,7 +17,7 @@ message RegisterRequest {
 }
 
 message RegisterResponse {
-  string user_id = 1;
+  int64 user_id = 1;
 }
 
 message LoginRequest {
@@ -35,5 +35,5 @@ message ValidateTokenRequest {
 
 message ValidateTokenResponse {
   bool valid = 1;
-  string user_id = 2;
+  int64 user_id = 2;
 }
